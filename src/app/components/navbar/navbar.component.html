@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" routerLink="/home">
+      <h3 style="font-family: gilroyBold; font-weight: bold; color: #484848;">PelisApp</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+
+      </ul>
+      <div class="d-flex">
+
+        <div class="input-group mb-3 ">
+
+          <input type="search" class="form-control shadow" placeholder="Buscar película" #txtBuscar
+            (keyup.enter)="buscarPelicula(txtBuscar.value)"
+            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border: 0 !important; box-shadow: inset 0 !important;">
+          <button class="btn btn-outline-success shadow" type="button" id="button-addon2"
+            (click)="buscarPelicula(txtBuscar.value)"
+            style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; border: 0;">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>

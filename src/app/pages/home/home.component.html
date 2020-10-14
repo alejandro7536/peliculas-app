@@ -1,0 +1,13 @@
+<app-loader *ngIf="loading" ></app-loader>
+
+<div *ngIf="movies.length > 0">
+  <app-slideshow [movies]="moviesSlideshow"></app-slideshow>
+</div>
+<div class="container" *ngIf="movies.length > 0">
+  <h2 style="font-family: gilroyBold;" class="mt-5">Películas</h2>
+
+  <app-peliculas-poster-grid [movies]="movies" *ngIf="movies.length > 0"></app-peliculas-poster-grid>
+
+
+
+</div>
