@@ -7,6 +7,7 @@ import { PagesModule } from './pages/pages.module';
 import { PipesModule } from './pipes/pipes.module';
 import { RoutingModule } from './routing.module';
 import { ComponentsModule } from './components/components.module';
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { ComponentsModule } from './components/components.module';
     PipesModule,
     HttpClientModule,
     RoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    GoogleTagManagerModule.forRoot({
+      id: 'GTM-NLXMFDD',
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
